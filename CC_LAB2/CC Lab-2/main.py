@@ -56,7 +56,7 @@ def login(request: Request, username: str = Form(...), password: str = Form(...)
     return RedirectResponse(f"/events?user={username}", status_code=302)
 
 
-
+#demo comment
 @app.get("/events", response_class=HTMLResponse)
 def events(request: Request, user: str):
     db = get_db()
